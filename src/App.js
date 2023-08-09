@@ -1,7 +1,12 @@
 import React from "react";
+import SheetModal from "./Components/Shared/SheetModal";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <SheetModal />
+    </>
+  );
 }
 
 export default App;
