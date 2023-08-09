@@ -1,7 +1,10 @@
 import React from "react";
+import InputField from "./Components/Shared/InputField";
 
 function App() {
-  return <></>;
+  return <>
+  <InputField/>
+  </>;
 }
 
 export default App;
