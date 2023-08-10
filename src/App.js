@@ -13,6 +13,7 @@ export default function App() {
       }}
     >
       <SearchBar />
+      
       <BottomNav />
 
     </div>

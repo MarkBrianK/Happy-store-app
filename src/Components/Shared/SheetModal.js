@@ -6,7 +6,7 @@ export default function SheetModal({ children, style }) {
     borderTopRightRadius: "35px",
     backgroundColor: COLORS.sheetModalBackground,
     marginTop: "120px",
-    ...style, // This will override any previously set properties if they are also present in `style`
+    ...style, 
   };
 
   return (
