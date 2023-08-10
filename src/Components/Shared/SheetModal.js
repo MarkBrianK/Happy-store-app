@@ -1,18 +1,22 @@
 import COLORS from "../../Constants/Colors";
-export default function SheetModal({ children }) {
+
+export default function SheetModal({ children, style }) {
+  const combinedStyle = {
+    borderTopLeftRadius: "35px",
+    borderTopRightRadius: "35px",
+    backgroundColor: COLORS.sheetModalBackground,
+    marginTop: "120px",
+    ...style, // This will override any previously set properties if they are also present in `style`
+  };
+
   return (
     <div>
       <div
-        className="modal fade show d-block opacity-60 h-80 "
+        className="modal fade show d-block opacity-60 h-80"
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exampleModalLabel"
-        style={{
-          marginTop: "120px",
-          borderTopLeftRadius: "35px",
-          borderTopRightRadius: "35px",
-          backgroundColor: COLORS.sheetModalBackground,
-        }}
+        style={combinedStyle}
       >
         <div className="modal-dialog">{children}</div>
       </div>
