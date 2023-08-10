@@ -21,7 +21,6 @@ export default function BottomNav() {
                   className={Styles.houseIcon}
                   icon={faHouse}
                   size="lg"
-                  style={{ color: "#bdcce5" }}
                 />
               </span>
             </a>
@@ -30,10 +29,11 @@ export default function BottomNav() {
             <a href="/">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
+                  className={Styles.searchIcon} // Change this
                   icon={faMagnifyingGlass}
                   rotation={90}
                   size="lg"
-                  style={{ color: "#bdcce5" }}
+                  //   style={{ color: "#bdcce5" }}
                 />
               </span>
             </a>
@@ -42,9 +42,9 @@ export default function BottomNav() {
             <a href="/">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
+                  className={Styles.heartIcon} // Change this
                   icon={faHeart}
                   size="lg"
-                  style={{ color: "#bdcce5" }}
                 />
               </span>
             </a>
@@ -53,9 +53,9 @@ export default function BottomNav() {
             <a href="/">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
+                  className={Styles.cartIcon} // Change this
                   icon={faCartShopping}
                   size="lg"
-                  style={{ color: "#bdcce5" }}
                 />
               </span>
             </a>
@@ -64,6 +64,7 @@ export default function BottomNav() {
             <a href="/">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
+                  className={Styles.profileIcon} // Change this
                   icon={faUser}
                   size="lg"
                   style={{
