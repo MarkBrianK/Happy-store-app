@@ -7,7 +7,7 @@ export default function SearchBar() {
       <div class="container">
         <form class="d-flex" role="search">
           <input
-            class="form-control me-2 rounded-pill"
+            className="form-control me-2 rounded-pill"
             type="search"
             placeholder="Search"
             aria-label="Search"
