@@ -1,11 +1,18 @@
 import React from 'react';
-import Button from "./Components/Shared/Button";
+import Button from '../Shared/Button';
+import SheetModal from '../Shared/SheetModal';
 function SignIn(){
     return(
-        <>
+        <div>
+        <SheetModal>
 
-        <Button> signin</Button>
-        </>
+
+        <Button>SignIn</Button>
+
+        </SheetModal>
+
+
+        </div>
 
     )
 }
