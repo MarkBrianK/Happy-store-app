@@ -1,9 +1,10 @@
 import React from "react";
 // import SearchBar from "./Components/Shared/Search";
 // import BottomNav from "./Components/Shared/BottomNav";
-import Footer from "./Components/Screens/Footer";
+// import Footer from "./Components/Screens/Footer";
 // import SignupComponent from "./Components/Screens/SignUp";
-import HomePage from "./Components/Screens/HomePage"
+import HomeComponent from "./Components/Screens/HomePage";
+// import Carousel from "./Components/Shared/Carousel";
 
 export default function App() {
   return (
@@ -16,12 +17,13 @@ export default function App() {
       }}
     >
       <div style={{ flex: 1, paddingTop: "40px" }}>
-        <HomePage/>
         {/* <SignupComponent /> */}
         {/* <SearchBar /> */}
         {/* <BottomNav /> */}
+        <HomeComponent />
+        {/* <Carousel/> */}
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

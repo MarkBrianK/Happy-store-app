@@ -2,7 +2,7 @@ import React from "react";
 import TextRendering from "../Shared/TextRendering";
 import Search from "../Shared/Search";
 import BottomNav from "../Shared/BottomNav";
-// import Carousel from "../Shared/Carousel";
+import Carousel from "../Shared/Carousel";
 
 export default function HomeComponent() {
   return (
@@ -14,7 +14,7 @@ export default function HomeComponent() {
         <Search />
       </div>
       <div className="mt-2 p-2 rounded h-20">
-        {/* <Carousel className="border border-dark-subtle"/> */}
+        <Carousel className="border border-dark-subtle"/>
       </div>
       <div>
         <BottomNav />
