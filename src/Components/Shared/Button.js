@@ -1,9 +1,15 @@
-function Button({ children,style }) {
+import React from "react";
+
+function Button({ children, style }) {
   return (
     <div
       style={{
+        width:"100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
         backgroundColor: "#FFBD5A",
-        padding: "10px 20px",
+        padding: "5px 10px",
         borderRadius: "30px",
         cursor: "pointer",
         ...style
@@ -13,5 +19,6 @@ function Button({ children,style }) {
     </div>
   );
 }
+
 
 export default Button;
