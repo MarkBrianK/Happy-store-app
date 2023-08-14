@@ -4,7 +4,7 @@ function Button({ children,style }) {
       style={{
         backgroundColor: "#FFBD5A",
         padding: "10px 20px",
-        borderRadius: "16px",
+        borderRadius: "30px",
         cursor: "pointer",
         ...style
       }}

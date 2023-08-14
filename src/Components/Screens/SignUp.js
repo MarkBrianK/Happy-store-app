@@ -3,6 +3,7 @@ import TextRendering from "../Shared/TextRendering";
 import SheetModal from "../Shared/SheetModal";
 import InputField from "../Shared/InputField";
 import Button from "../Shared/Button";
+// import Footer from "./Footer";
 
 export default function SignupComponent() {
   
@@ -83,8 +84,9 @@ export default function SignupComponent() {
             </div>
         </SheetModal>
       </div>
+
+      {/* <Footer /> */}
     </div>
   );
 }
 
-// Your SheetModal component remains unchanged

@@ -4,7 +4,7 @@ import { labelStyles } from "../../Constants/LabelStyles";
 
 export default function InputField() {
   return (
-    <div className="p-3">
+    <div className="p-3 mb-2">
       {/* firstName */}
       <div>
         <label
