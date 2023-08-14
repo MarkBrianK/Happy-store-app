@@ -66,8 +66,8 @@ export default function InputField() {
           Confirm Password
         </label>
         <input
-          type="password"
-          id="passwordInput"
+          type="confirm-password"
+          id="confirm-passwordInput"
           className="form-control"
           aria-describedby="passwordHelpInline"
           style={{ backgroundColor: COLORS.inputBackground ,height: 50,padding:"10px" }}
