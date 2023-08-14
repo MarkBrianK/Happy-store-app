@@ -8,17 +8,17 @@ export default function CardComponent() {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
-    <div className="container-fluid d-flex justify-content-center align-items-center vh-100">
-      <div
-        className="card text-center d-flex justify-content-center align-items-center"
-        style={{
-          border: "1px solid",
-          borderRadius: "25px",
-          width: "100%",
-          maxWidth: "14rem",
-          padding: "0.5rem", // padding to give some space inside the card
-        }}
-      >
+    <div className="container">
+    <div
+      className="card text-center d-flex justify-content-center align-items-center"
+      style={{
+        border: "1px solid",
+        borderRadius: "25px",
+        width: "100%",
+        maxWidth: "14rem",
+        padding: "0.5rem", 
+      }}
+    >
         <img
           src="https://contents.mediadecathlon.com/p1733131/k$c064a61fd1627660aa0bbd803446e45f/men-s-uv-water-t-shirt-white.jpg?format=auto&quality=40&f=800x800"
           className="card-img-top img-fluid"
