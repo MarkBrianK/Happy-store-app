@@ -6,75 +6,72 @@ export default function InputField() {
   return (
     <div className="p-3">
       {/* firstName */}
-      <div className="mb-3">
+      <div>
         <label
-          htmlFor="exampleFormControlInput1"
+          htmlFor="firstNameInput"
           className="form-label"
           style={labelStyles}
         >
-          First Name
+          Full Name
         </label>
         <input
-          type="name"
-          className="form-control"
-          id="exampleFormControlInput1"
-          placeholder="Enter First Name Here..."
-          style={{ backgroundColor: COLORS.inputBackground }}
+          type="text"
+          className="form-control "
+          id="firstNameInput"
+          placeholder="Enter Your Name Here..."
+          style={{ backgroundColor: COLORS.inputBackground ,height: 50,padding:"10px" }}
         />
       </div>
-      {/* LastName */}
-      <div className="mb-3">
-        <label
-          htmlFor="exampleFormControlInput1"
-          className="form-label"
-          style={labelStyles}
-        >
-          Last Name
-        </label>
-        <input
-          type="name"
-          className="form-control"
-          id="exampleFormControlInput1"
-          placeholder="Enter Last Name Here..."
-          style={{ backgroundColor: COLORS.inputBackground }}
-        />
-      </div>
+
       {/* email */}
-      <div className="mb-3">
-        <label
-          htmlFor="exampleFormControlInput1"
-          className="form-label"
-          style={labelStyles}
-        >
+      <div>
+        <label htmlFor="emailInput" className="form-label" style={labelStyles}>
           Email address
         </label>
         <input
           type="email"
           className="form-control"
-          id="exampleFormControlInput1"
+          id="emailInput"
           placeholder="name@example.com"
-          style={{ backgroundColor: COLORS.inputBackground }}
+          style={{ backgroundColor: COLORS.inputBackground ,height: 50,padding:"10px" }}
         />
       </div>
-      {/* password  */}
-      <label
-        htmlFor="inputPassword6"
-        className="col-form-label"
-        style={labelStyles}
-      >
-        Password
-      </label>
-      <input
-        type="password"
-        id="inputPassword6"
-        className="form-control"
-        aria-describedby="passwordHelpInline"
-        style={{ backgroundColor: COLORS.inputBackground }}
-      />
-      <div className="col-auto">
-        <span id="passwordHelpInline" className="form-text">
+      {/* password */}
+      <div>
+        <label
+          htmlFor="passwordInput"
+          className="form-label"
+          style={labelStyles}
+        >
+          Password
+        </label>
+        <input
+          type="password"
+          id="passwordInput"
+          className="form-control"
+          aria-describedby="passwordHelpInline"
+          style={{ backgroundColor: COLORS.inputBackground ,height: 50,padding:"10px" }}
+        />
+        <span id="passwordHelpInline" className="form-text" style={{fontSize:"12px",marginTop:"2px"}}>
           Must be 8-20 characters long.
         </span>
+      </div>
+      {/* confirm Password */}
+      <div>
+        <label
+          htmlFor="passwordInput"
+          className="form-label"
+          style={labelStyles}
+        >
+          Confirm Password
+        </label>
+        <input
+          type="password"
+          id="passwordInput"
+          className="form-control"
+          aria-describedby="passwordHelpInline"
+          style={{ backgroundColor: COLORS.inputBackground ,height: 50,padding:"10px" }}
+        />
       </div>
     </div>
   );

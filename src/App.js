@@ -1,6 +1,7 @@
 import React from "react";
-import SearchBar from "./Components/Shared/Search";
-import BottomNav from "./Components/Shared/BottomNav";
+// import SearchBar from "./Components/Shared/Search";
+// import BottomNav from "./Components/Shared/BottomNav";
+import SignupComponent from "./Components/Screens/SignUp";
 
 
 export default function App() {
@@ -12,9 +13,7 @@ export default function App() {
         paddingTop: "40px",
       }}
     >
-      <SearchBar />
-      
-      <BottomNav />
+      <SignupComponent/>
 
     </div>
   );
