@@ -3,10 +3,10 @@ import SignIn from "./Components/Screens/SignIn";
 // import SearchBar from "./Components/Shared/Search";
 // import BottomNav from "./Components/Shared/BottomNav";
 // import Footer from "./Components/Screens/Footer";
-import SignupComponent from "./Components/Screens/SignUp";
+// import SignupComponent from "./Components/Screens/SignUp";
 // import HomeComponent from "./Components/Screens/HomePage";
 // import Carousel from "./Components/Shared/Carousel";
-// import ProductComponent from "./Components/Screens/ProductScreen";
+import ProductComponent from "./Components/Screens/ProductScreen";
 
 export default function App() {
   return (
@@ -18,12 +18,12 @@ export default function App() {
         flexDirection: "column",
       }}
     >
-      <div style={{ flex: 1, paddingTop: "40px" }}>
-        <SignupComponent />
+      <div style={{ flex: 1, paddingTop: "20px" }}>
+        {/* <SignupComponent /> */}
         {/* <SearchBar /> */}
         {/* <BottomNav /> */}
         {/* <HomeComponent /> */}
-        {/* <ProductComponent /> */}
+        <ProductComponent />
         {/* <Carousel/> */}
         <SignIn />
       </div>
