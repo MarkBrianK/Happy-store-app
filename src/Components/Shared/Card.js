@@ -16,7 +16,7 @@ export default function CardComponent() {
         borderRadius: "25px",
         width: "100%",
         maxWidth: "14rem",
-        padding: "0.5rem", 
+        padding: "0.5rem",
       }}
     >
         <img
