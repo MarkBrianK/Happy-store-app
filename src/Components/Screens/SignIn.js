@@ -19,14 +19,14 @@ function SignIn() {
             </TextRendering >
 
             <SheetModal>
-                <div style={{ display: 'flex', justifyContent: "space-between", alignItems: "center", marginTop: "20px" }}>
+                <div style={{ display: 'flex', justifyContent: "space-between", alignItems: "center", marginTop: "50px" }}>
 
 
                     <IconHolder> f</IconHolder>
                     <IconHolder> g</IconHolder>
                 </div>
 
-                <form>
+                <form style={{marginTop:"70px"}}>
                     <InputField label="Email address" type="email" placeholder="Enter Email adress" />
                     <InputField label="Password" type="password" placeholder="Enter Password..." />
 
