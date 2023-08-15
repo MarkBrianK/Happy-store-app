@@ -17,7 +17,7 @@ function SignIn() {
             </TextRendering >
 
             <SheetModal>
-                <div>
+                <div style={{display:'flex', justifyContent:"space-between", alignItems:"center", marginTop:"20px"}}>
 
 
                     <IconHolder> f</IconHolder>
