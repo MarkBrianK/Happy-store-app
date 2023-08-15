@@ -1,8 +1,13 @@
-function IconHolder(){
-    return(
+function IconHolder({ children }) {
+    return (
 
-        <div>
-        
+        <div style={{
+            backgroundColor: "#f6f6f6", padding: "5px 10px",
+            borderRadius: "30px",
+            cursor: "pointer",
+        }}>
+            {children}
+
         </div>
     )
 }
