@@ -6,7 +6,8 @@ export default function InputField({ label, type, placeholder }) {
     <label htmlFor={`${type}Input`} className="form-label" style={
 
     {
-      //  add styles here. You an create a dyle file or input directly
+      fontWeight:"600"
+
     }}>
           {label}
         </label>
@@ -17,8 +18,8 @@ export default function InputField({ label, type, placeholder }) {
           placeholder={placeholder}
           style={
 
-            {
-              //  add styles here. You an create a dyle file or input directly
+            { backgroundColor:"#F5F5F7"
+
             }}
         />
 
