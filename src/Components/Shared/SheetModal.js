@@ -1,21 +1,19 @@
 import COLORS from "../../Constants/Colors";
+
 export default function SheetModal({ children }) {
+  const basicStyle = {
+    borderTopLeftRadius: "45px",
+    borderTopRightRadius: "45px",
+    backgroundColor: COLORS.sheetModalBackground,
+    display: "flex",
+    justifyContent: "center",
+    height: "100vh", // This will set the modal's height to 80% of the viewport height.
+    overflow: 'hidden' // In case the content is more, this will allow scrolling.
+  };
+
   return (
-    <div>
-      <div
-        className="modal fade show d-block opacity-60 h-80 "
-        id="exampleModal"
-        tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
-        style={{
-          marginTop: "120px",
-          borderTopLeftRadius: "35px",
-          borderTopRightRadius: "35px",
-          backgroundColor: COLORS.sheetModalBackground,
-        }}
-      >
-        <div className="modal-dialog">{children}</div>
-      </div>
+    <div style={basicStyle}>
+      <div>{children}</div>
     </div>
   );
 }

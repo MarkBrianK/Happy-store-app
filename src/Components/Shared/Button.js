@@ -1,16 +1,24 @@
-function Button({ children }) {
-    return (
-      <div
-        style={{
-          backgroundColor: "#FFBD5A",
-          padding: "10px 20px",
-          borderRadius: "16px",
-          cursor: "pointer",
-        }}
-      >
-        {children}
-      </div>
-    );
-  }
+import React from "react";
 
-  export default Button;
+function Button({ children, style }) {
+  return (
+    <div
+      style={{
+        width:"100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#FFBD5A",
+        padding: "5px 10px",
+        borderRadius: "30px",
+        cursor: "pointer",
+        ...style
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+
+export default Button;

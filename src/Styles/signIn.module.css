@@ -1,0 +1,7 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* This assumes you want to center vertically based on the entire viewport height. */
+  }
+  
