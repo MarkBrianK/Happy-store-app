@@ -10,7 +10,6 @@ export default function TextRendering({ children, style }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        marginBottom: "20px",
         ...style,
       }}
     >
