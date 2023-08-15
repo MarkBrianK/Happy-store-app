@@ -6,9 +6,9 @@ function SignIn() {
     return (
         <div>
             <Header>
-            <h2 style={{fontWeight:"bold"}}>
-                Sign In
-            </h2>
+                <h2 style={{ fontWeight: "bold" }}>
+                    Sign In
+                </h2>
 
             </Header>
             <SheetModal>
