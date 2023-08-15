@@ -1,18 +1,20 @@
 import COLORS from "../../Constants/Colors";
 
-export default function SheetModal({ children }) {
-  const basicStyle = {
+export default function SheetModal({ children, style }) {
+  const defaultStyle = {
     borderTopLeftRadius: "45px",
     borderTopRightRadius: "45px",
     backgroundColor: COLORS.sheetModalBackground,
     display: "flex",
     justifyContent: "center",
-    height: "100vh", // This will set the modal's height to 80% of the viewport height.
-    overflow: 'hidden' // In case the content is more, this will allow scrolling.
+    height: "100vh",
+    overflow: 'hidden'
   };
 
+  const mergedStyles = { ...defaultStyle, ...style };
+
   return (
-    <div style={basicStyle}>
+    <div style={mergedStyles}>
       <div>{children}</div>
     </div>
   );

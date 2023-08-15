@@ -7,6 +7,10 @@ export default function TextRendering({ children, style }) {
         color: COLORS.blackColor,
         fontSize: 25,
         fontWeight: "bold",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginBottom: "20px",
         ...style,
       }}
     >
