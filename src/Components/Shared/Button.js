@@ -13,6 +13,7 @@ function Button({ children, style }) {
         padding: "5px 10px",
         borderRadius: "30px",
         cursor: "pointer",
+        border:"none",
         ...style
       }}
     >
