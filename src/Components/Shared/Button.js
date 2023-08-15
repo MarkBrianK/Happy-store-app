@@ -4,7 +4,8 @@ function Button({ children, style }) {
   return (
     <div
       style={{
-        width:"100%",
+        width:"385px",
+        height: "52px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
