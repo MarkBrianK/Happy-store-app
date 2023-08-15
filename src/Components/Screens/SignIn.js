@@ -3,6 +3,8 @@ import Button from '../Shared/Button';
 import SheetModal from '../Shared/SheetModal';
 import IconHolder from '../Shared/IconHolder';
 import TextRendering from '../Shared/TextRendering';
+import InputField from '../Shared/InputField';
+
 function SignIn() {
     return (
         <div>
@@ -24,21 +26,26 @@ function SignIn() {
                     <IconHolder> g</IconHolder>
                 </div>
 
+                <form>
+                    <InputField label="Email address" type="email" placeholder="Enter Email adress" />
+                    <InputField label="Password" type="password" placeholder="Enter Password..." />
+
+                    <Button type="submit" >
+                        <TextRendering
+                            style={{
+                                fontWeight: "normal",
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                            }}
+                        >
+                            Log In
+                        </TextRendering>
+                    </Button>
+
+                </form>
 
 
-
-                <Button>
-                    <TextRendering
-                        style={{
-                            fontWeight: "normal",
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}
-                    >
-                        Log In
-                    </TextRendering>
-                </Button>
 
                 <TextRendering
                     style={{
@@ -48,7 +55,7 @@ function SignIn() {
                         justifyContent: "center",
                         alignItems: "center",
                         color: "gray",
-                        marginBottom: "10px",
+                        marginTop: "20px",
                     }}
                 >
                     Don't have an account?
