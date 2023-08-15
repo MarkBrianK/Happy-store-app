@@ -9,7 +9,8 @@ function IconHolder({ children }) {
             borderRadius: "30px",
             cursor: "pointer",
             width: "141px",
-            height: "62px"
+            height: "62px",
+            border:"none",
         }}>
             {children}
 
