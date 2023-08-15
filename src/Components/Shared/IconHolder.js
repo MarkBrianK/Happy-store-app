@@ -1,7 +1,10 @@
+import React from "react"
+
+
 function IconHolder({ children }) {
     return (
 
-        <div style={{
+        <button style={{
             backgroundColor: "#f6f6f6", padding: "5px 10px",
             borderRadius: "30px",
             cursor: "pointer",
@@ -10,7 +13,7 @@ function IconHolder({ children }) {
         }}>
             {children}
 
-        </div>
+        </button>
     )
 }
 export default IconHolder
