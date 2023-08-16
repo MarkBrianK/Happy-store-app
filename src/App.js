@@ -1,12 +1,11 @@
 import React from "react";
-// import SignIn from "./Components/Screens/SignIn";
-// import SearchBar from "./Components/Shared/Search";
-// import BottomNav from "./Components/Shared/BottomNav";
-// import Footer from "./Components/Screens/Footer";
-// import SignupComponent from "./Components/Screens/SignUp";
+import { Routes, Route } from "react-router-dom";
+import { ROUTES } from "./Constants/Routes";
+
+import SignIn from "./Components/Screens/SignIn";
+import SignupComponent from "./Components/Screens/SignUp";
 import HomeComponent from "./Components/Screens/HomePage";
-// import Carousel from "./Components/Shared/Carousel";
-// import ProductComponent from "./Components/Screens/ProductScreen";
+import ProductComponent from "./Components/Screens/ProductScreen";
 
 export default function App() {
   return (
@@ -19,15 +18,13 @@ export default function App() {
       }}
     >
       <div style={{ flex: 1, paddingTop: "20px" }}>
-        {/* <SignupComponent /> */}
-        {/* <SearchBar /> */}
-        {/* <BottomNav /> */}
-        <HomeComponent />
-        {/* <ProductComponent /> */}
-        {/* <Carousel/> */}
-        {/* <SignIn /> */}
+        <Routes>
+          <Route path={ROUTES.home} element={<HomeComponent />} />
+          <Route path={ROUTES.signUp} element={<SignupComponent />} />
+          <Route path={ROUTES.signIn} element={<SignIn />} />
+          <Route path={ROUTES.productItem} element={<ProductComponent />} />
+        </Routes>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 }
