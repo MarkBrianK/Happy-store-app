@@ -1,4 +1,5 @@
 import React from "react";
+import SignIn from "./Components/Screens/SignIn";
 // import SearchBar from "./Components/Shared/Search";
 // import BottomNav from "./Components/Shared/BottomNav";
 // import Footer from "./Components/Screens/Footer";
@@ -24,6 +25,7 @@ export default function App() {
         {/* <HomeComponent /> */}
         {/* <ProductComponent /> */}
         {/* <Carousel/> */}
+        <SignIn />
       </div>
       {/* <Footer /> */}
     </div>

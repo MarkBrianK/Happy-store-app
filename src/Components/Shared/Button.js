@@ -2,7 +2,7 @@ import React from "react";
 
 function Button({ children, style }) {
   return (
-    <div
+    <button
       style={{
         width:"385px",
         height: "52px",
@@ -13,11 +13,12 @@ function Button({ children, style }) {
         padding: "5px 10px",
         borderRadius: "30px",
         cursor: "pointer",
+        border:"none",
         ...style
       }}
     >
       {children}
-    </div>
+    </button>
   );
 }
 
