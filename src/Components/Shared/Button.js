@@ -4,7 +4,7 @@ function Button({ children, style }) {
   return (
     <button
       style={{
-        width:"385px",
+        // width:"385px",
         height: "52px",
         display: "flex",
         alignItems: "center",

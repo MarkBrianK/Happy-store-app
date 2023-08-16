@@ -29,9 +29,7 @@ export default function HomeComponent() {
             <TextRendering>New Trend</TextRendering>
           </div>
           <div class="col-4">
-            <TextRendering
-              style={{ color: COLORS.Yellowish, fontSize: "12" }}
-            >
+            <TextRendering style={{ color: COLORS.Yellowish, fontSize: "12" }}>
               View all
             </TextRendering>
           </div>
@@ -42,7 +40,7 @@ export default function HomeComponent() {
         <div className="container-fluid">
           <div className="row">
             {times.map((time) => (
-              <div className="col-md-4 col-sm-6 mb-3" key={time}>
+              <div className="col-6-md-4 col-sm-6 mb-3" key={time}>
                 <Card />
               </div>
             ))}
