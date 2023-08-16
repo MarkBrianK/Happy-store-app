@@ -29,9 +29,7 @@ export default function HomeComponent() {
             <TextRendering>New Trend</TextRendering>
           </div>
           <div class="col-4">
-            <TextRendering
-              style={{ color: COLORS.Yellowish, fontSize: "12" }}
-            >
+            <TextRendering style={{ color: COLORS.Yellowish, fontSize: "12" }}>
               View all
             </TextRendering>
           </div>
@@ -40,10 +38,13 @@ export default function HomeComponent() {
 
       <div className={Styles.scrollableContainer}>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row justify-content-center">
             {times.map((time) => (
-              <div className="col-md-4 col-sm-6 mb-3" key={time}>
-                <Card />
+              <div
+                className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 m-1"
+                key={time}
+              >
+                <Card  />
               </div>
             ))}
           </div>
