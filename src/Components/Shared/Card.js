@@ -1,32 +1,31 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import { HeartIcon } from "../../Icons/HeartIcon";
 import { Rating } from "../../Icons/Rating";
 import Styles from "../../Styles/card.module.css";
 
-export default function CardComponent() {
+export default function CardComponent({ product }) {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
     <div className="col-12 col-sm-6 col-md-4 mb-3 text-center">
-    <div class="card text-center" style={{ width: "16rem", }}>
+      <div class="card text-center" style={{ width: "16rem" }}>
         <div class="card-body">
-          <h5 class="card-title fs-6">Item Name</h5>
+          <h5 class={`card-title fs-6 ${Styles.titleText}`}>{product.title}</h5>
           {/* image */}
           <img
-            src="https://contents.mediadecathlon.com/p1733131/k$c064a61fd1627660aa0bbd803446e45f/men-s-uv-water-t-shirt-white.jpg?format=auto&quality=40&f=800x800"
+            src={product.image}
             class="card-img-top"
             alt="..."
-            style={{ width: "10rem", height: "6rem" }}
+            style={{ width: "10rem", height: "6rem", objectFit: "fill" }}
           />
           {/* description  */}
           <div className={Styles.descriptionContainer}>
-            <p className={Styles.descriptionText}>
-              React components to get full confidence...
-              <a href="/productPage" className={Styles.learnMoreLink}>
-                Learn More
-              </a>
-            </p>
+            <p className={Styles.descriptionText}>{product.description}</p>
+
+            <Link to={`/product/${product.id}`} className={Styles.learnMoreLink}>Learn More</Link>
+
           </div>
 
           {/* card rating */}
@@ -40,7 +39,8 @@ export default function CardComponent() {
           >
             <span style={{ fontWeight: "bold", color: "black" }}>Rating:</span>
             <Rating />
-            4.7
+            {product.rating.count}
+            
           </p>
 
           <div class="row justify-content-between">
@@ -48,40 +48,42 @@ export default function CardComponent() {
               <p className="mb-2">
                 <span
                   style={{
-                    fontSize: "16px",
+                    paddingRight: "8px",
+                    fontSize: "18px",
                     fontWeight: "bold",
                     color: "GRAY",
-                   
                   }}
                 >
-                  Ksh:
+                  $
                 </span>
-                400
+                {product.price}
               </p>
             </div>
             <div class="col-6 col-sm-6">
               <Button>
-                <a
-                  href="/liked"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsLiked(!isLiked);
-                  }}
+                <button
+                  onClick={() => setIsLiked(!isLiked)}
                   style={{
+                    background: "transparent",
+                    border: "none",
                     textDecoration: "none",
                     color: isLiked ? "red" : "gray",
                     marginRight: "10px",
+                    cursor: "pointer",
+                    padding: 0,
+                    outline: "none",
                   }}
                 >
                   <HeartIcon />
-                </a>
-                <a
-                  href="/addCart"
+                </button>
+
+                <Link
+                  to={`/addCart/${product.id}`}
                   className="text-nowrap"
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   Add Cart
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

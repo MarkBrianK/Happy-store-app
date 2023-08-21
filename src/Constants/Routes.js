@@ -3,9 +3,8 @@ export const ROUTES = {
   home: "/",
   signUp: "/signup",
   signIn: "/sign",
-  productItem: "/product",
+  productScreen: "/product/:id",
   profile: "/profile/:id",
   account: "/account",
   addCart: "/addCart",
-  // ... other routes
 };
