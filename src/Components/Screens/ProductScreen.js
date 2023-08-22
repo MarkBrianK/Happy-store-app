@@ -4,6 +4,7 @@ import TextRendering from "../Shared/TextRendering";
 import SheetModal from "../Shared/SheetModal";
 import { Rating } from "../../Icons/Rating";
 import Button from "../Shared/Button";
+import LoadingComponent from "../Shared/Loading";
 
 export default function ProductComponent({ props }) {
   const { id } = useParams();
@@ -15,7 +16,12 @@ export default function ProductComponent({ props }) {
       .then((data) => setProduct(data));
   }, [id]);
 
-  if (!product) return <p>Loading...</p>;
+  if (!product)
+    return (
+      <p>
+        <LoadingComponent />
+      </p>
+    );
 
   return (
     <div className="container-fluid m-0 p-0">

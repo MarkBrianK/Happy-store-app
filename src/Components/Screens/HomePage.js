@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import TextRendering from "../Shared/TextRendering";
 import Search from "../Shared/Search";
 import BottomNav from "../Shared/BottomNav";
@@ -12,6 +12,23 @@ export default function HomeComponent() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
+
+
+  const searchRef = useRef(null);
+
+  const scrollToSearch = () => {
+    if (searchRef.current) {
+      searchRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const filteredProducts = data.filter(product => 
+    product.title.toLowerCase().includes(searchQuery.toLowerCase())
+  ); 
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -45,8 +62,8 @@ export default function HomeComponent() {
         <div className="container text-center mb-3">
           <TextRendering>Discover</TextRendering>
         </div>
-        <div>
-          <Search />
+        <div ref={searchRef}>
+          <Search onSearch={handleSearch}/>
         </div>
         <div className="mt-2 p-2 rounded h-20">
           <Carousel />
@@ -68,7 +85,7 @@ export default function HomeComponent() {
       <div className={Styles.scrollableContainer}>
         <div className="container-fluid">
           <div className="row justify-content-center">
-            {data.map((product) => (
+            {filteredProducts.map((product) => ( 
               <div
                 className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 m-1"
                 key={product.id}
@@ -81,7 +98,7 @@ export default function HomeComponent() {
       </div>
 
       <div className={Styles.bottomNav}>
-        <BottomNav />
+        <BottomNav onSearchClick={scrollToSearch} />
       </div>
     </div>
   );

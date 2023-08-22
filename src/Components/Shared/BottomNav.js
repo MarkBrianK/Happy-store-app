@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Styles from "../../Styles/bottomNav.module.css";
 
-export default function BottomNav() {
+export default function BottomNav({ onSearchClick }) {
   return (
     <div className="fixed-bottom">
       <div className={Styles.navigation}>
@@ -26,23 +26,22 @@ export default function BottomNav() {
             </a>
           </li>
           <li className="list-active" style={{ "--clr": "#f44336" }}>
-            <a href="/">
+            <a href="/search" onClick={onSearchClick}> 
               <span className={Styles.icon}>
                 <FontAwesomeIcon
-                  className={Styles.searchIcon} // Change this
+                  className={Styles.searchIcon}
                   icon={faMagnifyingGlass}
                   rotation={90}
                   size="lg"
-                  //   style={{ color: "#bdcce5" }}
                 />
               </span>
             </a>
           </li>
           <li className="list-active" style={{ "--clr": "#f44336" }}>
-            <a href="/">
+            <a href="/like">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
-                  className={Styles.heartIcon} // Change this
+                  className={Styles.heartIcon} 
                   icon={faHeart}
                   size="lg"
                 />
@@ -50,10 +49,10 @@ export default function BottomNav() {
             </a>
           </li>
           <li className="list-active" style={{ "--clr": "#f44336" }}>
-            <a href="/">
+            <a href="/addCart">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
-                  className={Styles.cartIcon} // Change this
+                  className={Styles.cartIcon} 
                   icon={faCartShopping}
                   size="lg"
                 />
@@ -61,10 +60,10 @@ export default function BottomNav() {
             </a>
           </li>
           <li className="list-active" style={{ "--clr": "#f44336" }}>
-            <a href="/">
+            <a href="/account">
               <span className={Styles.icon}>
                 <FontAwesomeIcon
-                  className={Styles.profileIcon} // Change this
+                  className={Styles.profileIcon} 
                   icon={faUser}
                   size="lg"
                   style={{

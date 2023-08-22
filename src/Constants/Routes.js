@@ -1,10 +1,11 @@
 // routes.js
 export const ROUTES = {
   home: "/",
+  search: "/search",
+  liked: "/like",
   signUp: "/signup",
   signIn: "/sign",
   productScreen: "/product/:id",
-  profile: "/profile/:id",
   account: "/account",
   addCart: "/addCart",
 };
