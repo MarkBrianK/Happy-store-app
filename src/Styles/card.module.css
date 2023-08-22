@@ -1,7 +1,13 @@
+.titleText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 95%; 
+  display: block;
+}
+
 .descriptionContainer {
   position: relative;
-  max-height: 4rem; 
-  overflow: hidden;
   margin: 10px 0;
 }
 
@@ -13,7 +19,8 @@
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   margin-bottom: 0.5rem; 
-  display: inline; /* added to ensure it's on the same line */
+  overflow: hidden; 
+  max-height: 4rem; 
 }
 
 .learnMoreLink {
@@ -26,6 +33,6 @@
   color: inherit;
   cursor: pointer;
   font-size: 0.8rem;
-  margin-left: 5px; /* space between text and button */
-  vertical-align: top; /* align with the top of the description text */
+  margin-left: 5px; 
+  vertical-align: top; 
 }

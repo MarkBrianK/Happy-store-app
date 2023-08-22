@@ -22,7 +22,7 @@ export default function App() {
           <Route path={ROUTES.home} element={<HomeComponent />} />
           <Route path={ROUTES.signUp} element={<SignupComponent />} />
           <Route path={ROUTES.signIn} element={<SignIn />} />
-          <Route path={ROUTES.productItem} element={<ProductComponent />} />
+          <Route path={ROUTES.productScreen} element={<ProductComponent />} />
         </Routes>
       </div>
     </div>
