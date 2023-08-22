@@ -8,7 +8,6 @@ import InputField from '../Shared/InputField';
 function SignIn() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    // const navigate = useNavigate()
 
     const handleLogIn = async (e) => {
         e.preventDefault();
@@ -25,7 +24,6 @@ function SignIn() {
 
         const data = await response.json();
         console.log(data);
-        // navigate('')
     };
 
     return (
