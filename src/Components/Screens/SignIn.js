@@ -94,7 +94,7 @@ function SignIn() {
                         marginTop: '20px',
                     }}
                 >
-                    Don't have an account?{' '}
+                    Dont have an account?{' '}
                     <span
                         style={{
                             fontWeight: 'bold',
