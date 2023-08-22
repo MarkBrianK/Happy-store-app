@@ -4,7 +4,7 @@ export const ROUTES = {
   search: "/search",
   liked: "/like",
   signUp: "/signup",
-  signIn: "/sign",
+  signIn: "/signin",
   productScreen: "/product/:id",
   account: "/account",
   addCart: "/addCart",
