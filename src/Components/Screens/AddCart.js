@@ -1,3 +1,3 @@
 export default function AddCart() {
-  return <div></div>;
+  return <div>Add to cart component</div>;
 }
