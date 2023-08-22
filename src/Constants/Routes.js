@@ -2,10 +2,9 @@
 export const ROUTES = {
   home: "/",
   signUp: "/signup",
-  signIn: "/sign",
+  signIn: "/signin",
   productItem: "/product",
   profile: "/profile/:id",
   account: "/account",
   addCart: "/addCart",
-  // ... other routes
 };
